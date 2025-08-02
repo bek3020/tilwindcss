@@ -4,40 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lagist</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <section class="banner mt-[100px] mb-30">
+    <section class="banner mt-[100px] mb-8">
       <div
-        class="container mx-auto max-w-[1120px] flex justify-between items-center"
+        class="container mx-auto max-w-[1120px] flex flex-col lg:flex-row justify-between items-center gap-6 p-3"
       >
-        <div class="left w-[50%]">
-          <h1 class="font-black text-[52px] mb-8 text-base/13">
+        <div data-aos="fade-up" class="left w-full lg:w-1/2">
+          <h1 class="font-black text-3xl lg:text-[52px] mb-8">
             Поставщик Дальнего Востока
           </h1>
-          <p class="text-oklch(37.1% 0 0)- text-[16px] mb-8">
+          <p class="text-[16px] mb-8 text-gray-600">
             Наши клиенты получают полный спектр услуг по работе с Китаем.
             Начиная с подбора производителя заканчивая доставкой товара до
             двери. Настолько прозрачных сделок с Китаем вы еще не осуществляли.
           </p>
           <button class="border-b-4 border-orange-500">Узнать больше</button>
         </div>
-        <div class="right">
-          <img class="rounded-3xl" src="img/banner_img.png" alt="" />
+        <div class="right w-full lg:w-1/2">
+          <img
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="rounded-3xl w-full"
+            src="img/banner_img.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
+
     <section class="dastavka mb-30">
       <div
-        class="container mx-auto max-w-[1120px] flex justify-between items-center"
+        class="container mx-auto max-w-[1120px] flex flex-col items-center w-full px-4"
       >
-        <div class="dastavka_box flex gap-6">
+        <div
+          class="dastavka_box flex flex-col gap-6 sm:flex-col md:flex-col lg:flex-row w-full justify-between"
+        >
+          <!-- Card 1 -->
           <div
-            class="bg-white dark:bg-whel-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            class="bg-white dark:bg-whel-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 w-full lg:w-[32%]"
           >
             <div>
               <span
-                class="inline-flex items-center justify-center rounded-[50%] bg-indigo-500 p-3 shadow-lg"
+                class="inline-flex items-center justify-center rounded-full bg-indigo-500 p-3 shadow-lg"
               >
                 <img src="img/Vector.png" alt="" />
               </span>
@@ -52,12 +69,16 @@
               eiusmod incididunt ut.
             </p>
           </div>
+
+          <!-- Card 2 -->
           <div
-            class="bg-white dark:bg-whel-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            class="bg-white dark:bg-whel-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 w-full lg:w-[32%]"
           >
             <div>
               <span
-                class="inline-flex items-center justify-center rounded-[50%] bg-indigo-500 p-3 shadow-lg"
+                class="inline-flex items-center justify-center rounded-full bg-indigo-500 p-3 shadow-lg"
               >
                 <img src="img/Vector (1).png" alt="" />
               </span>
@@ -72,12 +93,16 @@
               eiusmod incididunt ut.
             </p>
           </div>
+
+          <!-- Card 3 -->
           <div
-            class="bg-white dark:bg-whel-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            class="bg-white dark:bg-whel-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 w-full lg:w-[32%]"
           >
             <div>
               <span
-                class="inline-flex items-center justify-center rounded-[50%] bg-indigo-500 p-3 shadow-lg"
+                class="inline-flex items-center justify-center rounded-full bg-indigo-500 p-3 shadow-lg"
               >
                 <img src="img/Group (1).png" alt="" />
               </span>
@@ -95,106 +120,122 @@
         </div>
       </div>
     </section>
-    <section class="banner2 mb-100 mr-30">
+    <section class="relative py-16">
       <div
-        class="container mx-auto max-w-[1110px] flex justify-between items-center"
+        class="container mx-auto max-w-[1110px] flex justify-center items-center px-4"
       >
-        <div class="banner_boxs">
-          <img class="absolute" src="img/Rectangle 7.png" alt="" />
-          <img class="absolute" src="img/Rectangle 8.png" alt="" />
-          <h1 class="relative top-50 left-18 text-5xl text-white">
+        <div class="banner_boxs relative w-full text-center">
+          >
+          <img
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="top-[30px] left-0 w-full h-full object-cover z-0"
+            src="img/why us.png"
+            alt=""
+          />
+
+          <!-- Matn -->
+          <!-- <h1
+            class="relative text-white text-3xl sm:text-4xl ml-[-50px] lg:text-5xl font-bold leading-snug py-24"
+          >
             Почему с нами <br />
             выгоднее?
-          </h1>
+          </h1> -->
         </div>
       </div>
     </section>
-    <div
-      class="container mx-auto max-w-[1110px] flex justify-between items-center"
-    >
-      <div class="flex flex-wrap justify-between gap-[30px] m-[50px]">
-        <div class="boxs flex">
-          <div
-            class="w-[500px] flex items-start gap-4 shadow-lg p-[20px] rounded-[5px] hover:shadow-xl transition delay-100"
-          >
-            <div
-              class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
-            >
-              <img src="./img/Group (1).png" alt="" class="w-[30px] h-[30px]" />
-            </div>
 
-            <div class="flex flex-col">
-              <p class="font-[600] text-gray-800 text-[20px]">
-                Lorem ipsum dolor sit amet
-              </p>
-              <span class="text-gray-400"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod ut.</span
-              >
-            </div>
+    <div class="container mx-auto max-w-[1110px] px-4">
+      <div
+        class="flex flex-wrap justify-center lg:justify-between gap-[30px] my-[50px]"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="w-full sm:w-[90%] md:w-[47%] lg:w-[48%] flex items-start gap-4 shadow-lg p-5 rounded-[5px] hover:shadow-xl transition delay-100"
+        >
+          <div
+            data-aos="fade-left"
+            class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
+          >
+            <img src="./img/Group (1).png" alt="" class="w-[30px] h-[30px]" />
           </div>
-          <div
-            class="w-[500px] flex items-start gap-4 shadow-lg p-[20px] rounded-[5px] hover:shadow-xl transition delay-100"
-          >
-            <div
-              class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
-            >
-              <img src="./img/Group (2).png" alt="" class="w-[30px] h-[30px]" />
-            </div>
-
-            <div class="flex flex-col">
-              <p class="font-[600] text-gray-800 text-[20px]">
-                Lorem ipsum dolor sit amet
-              </p>
-              <span class="text-gray-400"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod ut.</span
-              >
-            </div>
+          <div class="flex flex-col">
+            <p class="font-semibold text-gray-800 text-lg sm:text-xl">
+              Lorem ipsum dolor sit amet
+            </p>
+            <span class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </span>
           </div>
         </div>
-        <div class="boxs flex">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2300"
+          class="w-full sm:w-[90%] md:w-[47%] lg:w-[48%] flex items-start gap-4 shadow-lg p-5 rounded-[5px] hover:shadow-xl transition delay-100"
+        >
           <div
-            class="w-[500px] flex items-start gap-4 shadow-lg p-[20px] rounded-[5px] hover:shadow-xl transition delay-100"
+            data-aos="fade-left"
+            class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
           >
-            <div
-              class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
-            >
-              <img src="./img/Group (3).png" alt="" class="w-[30px] h-[30px]" />
-            </div>
-
-            <div class="flex flex-col">
-              <p class="font-[600] text-gray-800 text-[20px]">
-                Lorem ipsum dolor sit amet
-              </p>
-              <span class="text-gray-400"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod ut.</span
-              >
-            </div>
+            <img src="./img/Group (2).png" alt="" class="w-[30px] h-[30px]" />
           </div>
-          <div
-            class="w-[500px] flex items-start gap-4 shadow-lg p-[20px] rounded-[5px] hover:shadow-xl transition delay-100"
-          >
-            <div
-              class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
-            >
-              <img src="img/Group (4).png" alt="" class="w-[30px] h-[30px]" />
-            </div>
+          <div class="flex flex-col">
+            <p class="font-semibold text-gray-800 text-lg sm:text-xl">
+              Lorem ipsum dolor sit amet
+            </p>
+            <span class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </span>
+          </div>
+        </div>
 
-            <div class="flex flex-col">
-              <p class="font-[600] text-gray-800 text-[20px]">
-                Lorem ipsum dolor sit amet
-              </p>
-              <span class="text-gray-400"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod ut.</span
-              >
-            </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="w-full sm:w-[90%] md:w-[47%] lg:w-[48%] flex items-start gap-4 shadow-lg p-5 rounded-[5px] hover:shadow-xl transition delay-100"
+        >
+          <div
+            data-aos="fade-right"
+            class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
+          >
+            <img src="./img/Group (3).png" alt="" class="w-[30px] h-[30px]" />
+          </div>
+          <div class="flex flex-col">
+            <p class="font-semibold text-gray-800 text-lg sm:text-xl">
+              Lorem ipsum dolor sit amet
+            </p>
+            <span class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2700"
+          class="w-full sm:w-[90%] md:w-[47%] lg:w-[48%] flex items-start gap-4 shadow-lg p-5 rounded-[5px] hover:shadow-xl transition delay-100"
+        >
+          <div
+            class="min-w-[80px] h-[80px] bg-gray-200 rounded-full flex justify-center items-center"
+          >
+            <img src="img/Group (4).png" alt="" class="w-[30px] h-[30px]" />
+          </div>
+          <div class="flex flex-col">
+            <p class="font-semibold text-gray-800 text-lg sm:text-xl">
+              Lorem ipsum dolor sit amet
+            </p>
+            <span class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </span>
           </div>
         </div>
       </div>
     </div>
+
     <section class="py-16 bg-white">
       <div
         class="container mx-auto max-w-[1120px] flex justify-between items-center"
@@ -208,6 +249,9 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1000"
               class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
             >
               <img
@@ -228,6 +272,8 @@
             </div>
 
             <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
               class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
             >
               <img
@@ -248,6 +294,8 @@
             </div>
 
             <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
               class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
             >
               <img
@@ -274,11 +322,19 @@
       class="container mx-auto max-w-[1110px] flex justify-between items-center"
     >
       <section
-        class="klinet bg-sky-800 w-[100%] h-[99vh] mb-10 flex items-center p-20 gap-5"
+        class="klinet bg-sky-800 w-[100%] h-[99vh] mb-10 flex items-center p-20 gap-5 flex-col lg:flex-row p-6 gap-5:"
       >
-        <h1 class="text-5xl text-white">Привлеченные клиенты</h1>
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1800"
+          class="text-5xl text-white"
+        >
+          Привлеченные клиенты
+        </h1>
         <div class="overflow-x-auto mt-10">
           <table
+            data-aos="fade-up"
+            data-aos-duration="2000"
             class="w-full border border-gray-200 text-sm text-gray-800 bg-gray-200"
           >
             <thead class="bg-[#0B7572] text-white">
@@ -416,5 +472,520 @@
         </div>
       </section>
     </div>
+    <section class="py-16 bg-white">
+      <div class="container mx-auto max-w-[1120px]">
+        <h1 class="text-5xl font-extrabold mb-12 text-center lg:text-left">
+          Этапы поставки
+        </h1>
+        <div class="flex flex-col gap-6">
+          <div
+            data-aos="zoom-in-down"
+            class="w-full overflow-hidden rounded-xl bg-white shadow-md p-6"
+          >
+            <div class="flex flex-col md:flex-row">
+              <img
+                class="w-full md:w-48 h-48 object-cover rounded-md"
+                src="img/hamkor_1.png"
+                alt="Image 1"
+              />
+              <div class="mt-4 md:mt-0 md:ml-6">
+                <div class="text-sm font-semibold text-indigo-500 uppercase">
+                  Company retreats
+                </div>
+                <h2 class="text-lg font-medium text-black mt-1">
+                  Incredible accommodation for your team
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  Looking to take your team away on a retreat to enjoy awesome
+                  food and take in some sunshine?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            class="w-full overflow-hidden rounded-xl bg-white shadow-md p-6"
+          >
+            <div class="flex flex-col md:flex-row">
+              <img
+                class="w-full md:w-48 h-48 object-cover rounded-md"
+                src="img/hamkor_2.png"
+                alt="Image 2"
+              />
+              <div class="mt-4 md:mt-0 md:ml-6">
+                <div class="text-sm font-semibold text-indigo-500 uppercase">
+                  Company retreats
+                </div>
+                <h2 class="text-lg font-medium text-black mt-1">
+                  Incredible accommodation for your team
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  Looking to take your team away on a retreat to enjoy awesome
+                  food and take in some sunshine?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            class="w-full overflow-hidden rounded-xl bg-white shadow-md p-6"
+          >
+            <div class="flex flex-col md:flex-row">
+              <img
+                class="w-full md:w-48 h-48 object-cover rounded-md"
+                src="img/hamkor_3.png"
+                alt="Image 3"
+              />
+              <div class="mt-4 md:mt-0 md:ml-6">
+                <div class="text-sm font-semibold text-indigo-500 uppercase">
+                  Company retreats
+                </div>
+                <h2 class="text-lg font-medium text-black mt-1">
+                  Incredible accommodation for your team
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  Looking to take your team away on a retreat to enjoy awesome
+                  food and take in some sunshine?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="container mx-auto max-w-[1120px] flex justify-between items-center flex-col gap-4 lg:flex-row gap-6"
+      >
+        <div
+          class="boxes flex flex-col items-center justify-center md:items-start"
+        >
+          <h1 class="text-5xl font-semibold">Нам доверяют</h1>
+          <div
+            class="sivs p-20 flex flex-wrap justify-between gap-[90px] items-center justify-center"
+          >
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/logo 1.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/logo_main 1.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-l border-gray-300 border-r border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/layer1.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/59296cfd337bc42bc44c33548d8705a876ca5981.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/Group.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/8.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/logo 1.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/logo_main 1.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              class="cardes w-[184px] h-[184px] flex flex-col items-center justify-center text-center border-r border-gray-300 border-l border-gray-300"
+            >
+              <img
+                class="w-full max-w-[80px] h-auto object-contain mb-2"
+                src="img/8.png"
+                alt=""
+              />
+              <h6 class="text-xl">Росатом</h6>
+              <p class="text-sm">Корпорация атомной энергии</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <div
+        class="container mx-auto max-w-[1120px] flex justify-between items-center flex-col gap-4 lg:flex-row gap-6"
+      >
+        <div class="boxes flex flex-col p-20 md:p-20">
+          <h2
+            class="font-[600] text-[48px] leading-[125%] mb-[50px] sm:text-xl"
+          >
+            Сотрудники компании
+          </h2>
+          <div class="svg flex">
+            <div class="flex flex-wrap gap-[50px]">
+              <div
+                class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[450px] h-[210px] overflow-hidden"
+              >
+                <div
+                  data-aos="flip-down"
+                  class="absolute left-0 top-0 w-[51px] h-full bg-green-900"
+                ></div>
+                <div class="flex items-center pl-[70px] space-x-6">
+                  <img
+                    src="img/Ellipse 10.png"
+                    alt="Anton"
+                    class="w-[138] h-[138px] rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 class="text-[20px] font-semibold">Антон Макаров</h3>
+                    <p class="text-gray-600 text-[16px] mb-3">
+                      Руководитель компании
+                    </p>
+                    <div class="flex gap-4 text-gray-400">
+                      <i class="fab fa-instagram text-[30px]"></i>
+                      <i class="fab fa-vk text-[30px]"></i>
+                      <i class="fab fa-linkedin-in text-[30px]"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-aos="flip-down"
+                class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[450px] h-[210px] overflow-hidden"
+              >
+                <div
+                  class="absolute left-0 top-0 w-[51px] h-full bg-green-900"
+                ></div>
+                <div class="flex items-center pl-[70px] space-x-6">
+                  <img
+                    src="img/Ellipse 11 (1).png"
+                    alt="Anton"
+                    class="w-[138] h-[138px] rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 class="text-[20px] font-semibold">Елена Валерьева</h3>
+                    <p class="text-gray-600 text-[16px] mb-3">
+                      Главный бухгалтер
+                    </p>
+                    <div class="flex gap-4 text-gray-400">
+                      <i class="fab fa-instagram text-[30px]"></i>
+                      <i class="fab fa-vk text-[30px]"></i>
+                      <i class="fab fa-linkedin-in text-[30px]"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-aos="flip-down"
+                class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[450px] h-[210px] overflow-hidden"
+              >
+                <div
+                  class="absolute left-0 top-0 w-[51px] h-full bg-green-900"
+                ></div>
+                <div class="flex items-center pl-[70px] space-x-6">
+                  <img
+                    src="img/Ellipse 10 (2).png"
+                    alt="Anton"
+                    class="w-[138] h-[138px] rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 class="text-[20px] font-semibold">Иван Аркадьев</h3>
+                    <p class="text-gray-600 text-[16px] mb-3">
+                      Менеджер по закупкам
+                    </p>
+                    <div class="flex gap-4 text-gray-400">
+                      <i class="fab fa-instagram text-[30px]"></i>
+                      <i class="fab fa-vk text-[30px]"></i>
+                      <i class="fab fa-linkedin-in text-[30px]"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-aos="flip-down"
+                class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[450px] h-[210px] overflow-hidden"
+              >
+                <div
+                  class="absolute left-0 top-0 w-[51px] h-full bg-green-900"
+                ></div>
+                <div class="flex items-center pl-[70px] space-x-6">
+                  <img
+                    src="./img/Ellipse 11.png"
+                    alt="Anton"
+                    class="w-[138] h-[138px] rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 class="text-[20px] font-semibold">Борис Вавилов</h3>
+                    <p class="text-gray-600 text-[16px] mb-3">Бухгалтер</p>
+                    <div class="flex gap-4 text-gray-400">
+                      <i class="fab fa-instagram text-[30px]"></i>
+                      <i class="fab fa-vk text-[30px]"></i>
+                      <i class="fab fa-linkedin-in text-[30px]"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-aos="flip-down"
+                class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[450px] h-[210px] overflow-hidden"
+              >
+                <div
+                  class="absolute left-0 top-0 w-[51px] h-full bg-green-900"
+                ></div>
+                <div class="flex items-center pl-[70px] space-x-6">
+                  <img
+                    src="./img/Ellipse 10 (1).png"
+                    alt="Anton"
+                    class="w-[138] h-[138px] rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 class="text-[20px] font-semibold">Алина Кравец</h3>
+                    <p class="text-gray-600 text-[16px] mb-3">
+                      Сотрудник отдела кадров
+                    </p>
+                    <div class="flex gap-4 text-gray-400">
+                      <i class="fab fa-instagram text-[30px]"></i>
+                      <i class="fab fa-vk text-[30px]"></i>
+                      <i class="fab fa-linkedin-in text-[30px]"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-aos="flip-down"
+                class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[450px] h-[210px] overflow-hidden"
+              >
+                <div
+                  class="absolute left-0 top-0 w-[51px] h-full bg-green-900"
+                ></div>
+                <div class="flex items-center pl-[70px] space-x-6">
+                  <img
+                    src="./img/Ellipse 11 (2).png"
+                    alt="Anton"
+                    class="w-[138] h-[138px] rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 class="text-[20px] font-semibold">Виктор Козуб</h3>
+                    <p class="text-gray-600 text-[16px] mb-3">
+                      Менеджер по закупкам
+                    </p>
+                    <div class="flex gap-4 text-gray-400">
+                      <i class="fab fa-instagram text-[30px]"></i>
+                      <i class="fab fa-vk text-[30px]"></i>
+                      <i class="fab fa-linkedin-in text-[30px]"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      data-aos="zoom-in-up"
+      class="max-w-screen-lg mx-auto px-4 py-10 h-[500px] mb-[150px]"
+    >
+      <h1 class="text-3xl font-bold mb-8">Наши контакты</h1>
+
+      <div class="flex flex-col lg:flex-row justify-between gap-8 h-full">
+        <div class="flex flex-col gap-6 w-full lg:w-1/2 justify-center">
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p class="text-sm text-gray-500">Телефон</p>
+              <p class="font-semibold">+7 8422 99 666 5</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p class="text-sm text-gray-500">E-mail</p>
+              <p class="font-semibold">info@pdv.ooo</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <p class="text-sm text-gray-500">Whatsapp</p>
+              <p class="font-semibold">+86 158 666 95 616</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="fa-brands fa-skype"></i>
+            <div>
+              <p class="text-sm text-gray-500">Skype</p>
+              <p class="font-semibold">sxy-bolts.cn</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-lg p-6 w-full lg:w-1/2">
+          <div class="mb-4">
+            <p class="text-sm text-gray-500">Полное наименование:</p>
+            <p class="font-semibold">ООО "Поставщик Дальнего Востока"</p>
+          </div>
+          <hr />
+          <div class="mb-4">
+            <p class="text-sm text-gray-500">ИНН:</p>
+            <p class="font-semibold">7329023100</p>
+          </div>
+          <hr />
+          <div class="mb-4">
+            <p class="text-sm text-gray-500">КПП:</p>
+            <p class="font-semibold">732901001</p>
+          </div>
+          <hr />
+          <div class="mb-4">
+            <p class="text-sm text-gray-500">ОГРН:</p>
+            <p class="font-semibold">1167325074762</p>
+          </div>
+          <hr />
+          <div>
+            <p class="text-sm text-gray-500">Адрес:</p>
+            <p class="font-semibold">
+              Россия, Ульяновская обл, территория Портовой Особой Экономической
+              Зоны, проезд Первых Резидентов дом 3
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-aos="zoom-in-up">
+      <div
+        class="container mx-auto max-w-[1120px] flex flex-col lg:flex-row justify-between items-center gap-6 p-3"
+      >
+        <div class="vip relative w-full">
+          <img
+            class="w-full h-full object-cover rounded-lg"
+            src="img/image 1.png"
+            alt=""
+          />
+          <div
+            class="absolute w-[80px] h-[80px] rounded-[50%] bg-white flex items-center justify-center absolute top-1/2 left-1/2 w-[80px] h-[80px] -translate-x-1/2 -translate-y-1/2"
+          >
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="px-4 py-10 bg-cyan-800">
+      <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-8"
+      >
+        <div class="text-7xl font-bold text-white">LOGO</div>
+        <div class="flex flex-col sm:flex-row gap-12">
+          <ul class="space-y-2">
+            <li><a href="#" class="text-white">Каталог</a></li>
+            <li><a href="#" class="text-white">О Компании</a></li>
+            <li><a href="#" class="text-white">Индивидуальная</a></li>
+            <li><a href="#" class="text-white">Партнерам</a></li>
+          </ul>
+          <!-- Column 2 -->
+          <ul class="space-y-2">
+            <li><a href="#" class="text-white">2D, 3D Модели</a></li>
+            <li><a href="#" class="text-white">Шоу-Румы</a></li>
+            <li><a href="#" class="text-white">Дилерам</a></li>
+            <li><a href="#" class="text-white">Контакты</a></li>
+            <li><a href="#" class="text-white">Конфигуратор</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-3">
+            <div class="w-5 h-5 border border-white rounded-full"></div>
+            <div class="w-5 h-5 border border-white rounded-full"></div>
+          </div>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="EMAIL"
+              class="border border-white bg-transparent text-white px-3 py-2 text-sm placeholder-white focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-[#FFA61A] px-4 py-2 text-white text-sm font-semibold flex items-center"
+            >
+              →
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-sm text-white/80">
+        © 1993–2021 Интернет-Магазин «LOGO» — Truck
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
